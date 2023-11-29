@@ -1,0 +1,44 @@
+/* 1. Dynamic Pesudo class */
+a:link{
+    color:crimson;
+}
+
+a:visited{
+    color: green;
+}
+
+a:active{
+    color: aqua;
+}
+
+a:hover{
+    cursor: crosshair;
+}
+
+h1:hover{
+    background-color: rgb(228, 21, 21);
+    color: aqua;
+    border: 10px solid yellow;
+    cursor: crosshair;
+}
+
+/* 2. Structural Pesudo class */
+p:first-child{
+    background-color: cyan;
+}
+
+pre:first-of-type{
+    background-color:chartreuse ;
+}
+
+i:last-child{
+    background-color: brown;
+}
+
+h3:last-of-type{
+    background-color: chocolate;
+}
+
+h5:nth-child(3){
+    background-color: darkslategray;
+}

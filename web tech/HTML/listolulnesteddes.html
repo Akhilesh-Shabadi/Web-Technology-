@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+</head>
+<body>
+    <!-- oreded list(ol), unoreded list(ul), description list(dt,dl,dd), nested list -->
+    <!-- list item(li) -->
+     <ol> <!-- 1.Nested oreded list -->
+        <li> apple </li>
+        <li> bananas </li>
+        <li> mango </li>
+        <li> watermelon </li>
+            <ol>
+                <li> apple </li>
+                <li> bananas </li>
+                <li> watermelon </li>
+            </ol>
+    </ol>
+    <hr>
+    <ol type="A"> <!-- 2.Nested oreded list -->
+        <li> watermelon </li>
+        <li> apple </li>
+        <li> bananas </li>
+            <ol type="I">
+                <li> apple </li>
+                <li> bananas </li>
+            </ol>
+    </ol>
+    <hr>
+    <ol start="5" reversed> <!-- 3.Nested oreded within unoreded list -->
+        <li> watermelon </li>
+        <li> apple </li>
+        <li> bananas </li>
+            <ul type="disc">
+                <li> watermelon </li>
+                <li> apple </li>
+            </ul>
+        <li> watermelon </li>
+        <li> apple </li>
+    </ol>
+    <hr>
+    <ol type="A" start="6" reversed> <!-- 4.Nested oreded within oreded and unoreded within oreded list -->
+        <li> watermelon </li>
+        <li> apple </li>
+        <li> bananas </li>
+            <ol type="I" start="5">
+                <li> watermelon </li>
+                <li> apple </li>
+                <li> bananas </li>
+            </ol>
+    </ol>
+    <ul type="square">
+        <li> watermelon </li>
+        <li> apple </li>
+            <ol start="0" reversed>
+                <li> watermelon </li>
+                <li> apple </li>
+                <li> bananas </li>
+            </ol>
+    </ul>
+    <hr>
+    <ul> <!-- 5.Nested unoreded within unoreded within unoreded list -->
+        <li>fruits</li>
+            <ul>
+                <li>bananas</li>
+                <li>apple</li>
+                    <ul type="square">
+                        <li>green</li>
+                        <li>red</li>
+                    </ul>
+                <li>pears</li>
+            </ul>
+        <li>vegetables</li>
+        <li>meat</li>
+    </ul>
+    <hr>
+    <dl> <!-- description list -->
+        <dt> About me: </dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse cum provident! Eveniet provident voluptates in odit error expedita quisquam cumque! Autem repellat dolore veniam provident! Cumque veniam labore consectetur.</dd>
+    </dl>
+</body>
+</html>

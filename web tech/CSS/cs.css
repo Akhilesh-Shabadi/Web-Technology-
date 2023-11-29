@@ -1,0 +1,15 @@
+div p{
+    background-color: aqua;
+}
+
+pre>p{
+    background-color: chartreuse;
+}
+
+section+i{
+    background-color: fuchsia;
+}
+
+section~h2{
+    background-color: darkolivegreen;
+}

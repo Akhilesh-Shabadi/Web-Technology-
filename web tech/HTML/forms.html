@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms tag</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>SignUp</legend>
+            <label for="username">Username :</label>
+                <input type="text" name="username" id="username"> <br> <br>
+            <label for="password">Password :</label>
+                <input type="text" name="password" id="password"> <br> <br>
+            <button type="submit">SignUp</button>
+            <button type="reset">Cencel</button>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>Input Types</legend>
+            <label for="username">UserName</label>
+                <input type="text" name="username" id="username"> <br> <br>
+            <label for="password">Password</label>
+                <input type="number" name="password" id="password"> <br> <br>
+            <label for="date">Date</label>
+                <input type="date" name="date" id="date"> <br> <br>
+            <label for="month">month</label>
+                <input type="month" name="month" id="month"> <br> <br>
+            <label for="range">Range</label>
+                <input type="range" name="range" id="range"> <br> <br>
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email"> <br> <br>
+            <label for="color">Color</label>
+                <input type="color" name="color" id="color"> <br> <br>
+            <label for="file">File</label>
+                <input type="file" name="file" id="file"> <br> <br>
+            <label for="checkbox">checkbox</label>
+                <input type="checkbox" name="checkbox" id="checkbox"> <br> <br>
+            <label for="radio">Radio</label>
+                <input type="radio" name="radio" id="radio"> <br> <br>
+        </fieldset>
+    </form> 
+    <hr> <br> <br> <hr> <br> <br>
+    <table cellspacing="10px" cellpadding="5px"> 
+        <center><h1>Details</h1></center>
+        <form action="">
+                <tr>
+                    <td> <label for="FullName"> FullName :</label> </td>
+                    <td> <input type="text" name="FullName" id="FullName">(max 20 char a-z and A-Z) </td>
+                </tr>
+                <tr>
+                    <td> <label for="Lastname">Lastname :</label> </td>
+                    <td> <input type="text" name="Lastname" id="Lastname">(max 20 char a-z and A-Z) </td>
+                </tr>
+                <tr>
+                    <td> <label for="dob">Date of Birth :</label> </td>
+                    <td> <input type="date" name="dob" id="dob"> </td>
+                </tr>
+                <tr>
+                    <td> Gender </td>
+                    <td> 
+                        <input type="radio" name="Gender" id="male"> 
+                          <label for="male">Male</label>
+                         <input type="radio" name="Gender" id="female">
+                          <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="email">Email :</label> </td>
+                    <td> <input type="email" name="email" id="email"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="mobile">Mobile :</label> </td>
+                    <td> <input type="number" name="phonenumber" id="mobile"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="address">Address :</label> </td>
+                    <td> <textarea name="address" id="address" cols="30" rows="10"></textarea> </td>
+                </tr>
+                <tr>
+                    <td> <label for="city">City :</label> </td>
+                    <td> 
+                        <select name="city" id="city">
+                            <option value="Bangaluru">Bangaluru</option>
+                            <option value="Mandya">Mandya</option>
+                            <option value="Vijayapura">Vijayapura</option>
+                            <option value="Hubbli">Hubbli</option>
+                            <option value="Mysore">Mysore</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="pincode">Pincode :</label> </td>
+                    <td> <input type="number" name="pincode" id="pincode">(6 digit number) </td>
+                </tr>
+                <tr>
+                    <td> <label for="state">State :</label> </td>
+                    <td> <input type="text" name="state" id="state"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="country">country</label> </td>
+                    <td> <input type="text" name="country" id="country"> </td>
+                </tr>
+                <tr>
+                    <td> <label>Hobbies :</label> </td>
+                    <td>
+                        <label for="sleeping">Sleeping</label> 
+                            <input type="checkbox" name="selected" id="sleeping">
+                        <label for="coding">Coding</label>
+                            <input type="checkbox" name="selected" id="coding">
+                        <label for="singing">Singing</label>
+                            <input type="checkbox" name="selected" id="singing">
+                        <label for="watchingmovies">Watching Movies</label>
+                            <input type="checkbox" name="selected" id="watchingmovies"> <br>
+                        <label for="others">others</label>
+                            <input type="checkbox" name="selected" id="others">
+                            <input type="text" name="Hobbies" id="others">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Qulification :</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>SI.no</td>
+                                <td>Examination</td>
+                                <td>Borad</td>
+                                <td>Precentage</td>
+                                <td>Year of password</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course applied for :</td>
+                    <td>
+                        <label for="bca">BCA</label>
+                            <input type="checkbox" name="" id="bca">
+                        <label for="b.sc">B.Sc</label>
+                            <input type="checkbox" name="" id="b.sc">
+                        <label for="mechanical">Mechanical</label>
+                            <input type="checkbox" name="" id="mechanical">
+                        <label for="civil">Civil</label>
+                            <input type="checkbox" name="" id="civil">
+                        <label for="mca">MCA</label>
+                            <input type="checkbox" name="" id="mca">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button>Login</button>
+                        <button type="reset">Reset</button>        
+                    </td>
+                </tr>
+        </form>
+    </table>
+</body>
+</html>

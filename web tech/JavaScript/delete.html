@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+
+        .success {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+
+        <div id="loginTask"></div>
+
+    </center>
+    <script>
+        function createLoginForm() {
+            var form = document.createElement("form");
+            form.addEventListener("submit", submitForm);
+
+            // Create table element
+            var table = document.createElement("table");
+            table.cellPadding = "5";
+            table.cellSpacing = "2";
+
+            // Create username row
+            var usernameRow = createFormRow("Username", "text", "uname", changeBorderColor);
+
+            // Create password row
+            var passwordRow = createFormRow("Password", "password", "password", null);
+
+            // Create login and signup button row
+            var buttonRow = document.createElement("tr");
+            var loginButtonCell = createFormCell("submit", "Login");
+            var signupButtonCell = createFormCell("button", "Signup", create);
+            buttonRow.appendChild(loginButtonCell);
+            buttonRow.appendChild(signupButtonCell);
+
+            // Append rows to the table
+            table.appendChild(usernameRow);
+            table.appendChild(passwordRow);
+            table.appendChild(buttonRow);
+
+            // Append the table to the form
+            form.appendChild(table);
+
+            // Append the form to the login container
+            document.getElementById("loginTask").appendChild(form);
+        }
+
+        function createFormRow(labelText, inputType, inputId, changeEvent) {
+            var row = document.createElement("tr");
+
+            var labelCell = document.createElement("td");
+            labelCell.innerHTML = "<h4>" + labelText + "</h4>";
+            row.appendChild(labelCell);
+
+            var inputCell = createFormCell(inputType, "", inputId, changeEvent);
+            row.appendChild(inputCell);
+
+            return row;
+        }
+
+        function createFormCell(inputType, value, inputId, changeEvent) {
+            var cell = document.createElement("td");
+
+            var inputElement = document.createElement("input");
+            inputElement.type = inputType;
+            inputElement.value = value;
+            inputElement.id = inputId;
+
+            if (changeEvent) {
+                inputElement.addEventListener("input", changeEvent);
+            }
+
+            cell.appendChild(inputElement);
+
+            return cell;
+        }
+
+        function changeBorderColor() {
+            var usernameInput = document.getElementById("uname");
+            if (usernameInput.value.trim() === "") {
+                // If empty, set border color to red
+                usernameInput.classList.add("error");
+            } else {
+                // If not empty, set border color to green
+                usernameInput.classList.remove("error");
+                usernameInput.classList.add("success");
+            }
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            var usernameInput = document.getElementById("uname");
+            if (usernameInput.value.trim() === "") {
+                // If empty, set border color to red
+                usernameInput.classList.add("error");
+                alert("Please enter a username.");
+            } else {
+                // If not empty, reset the border color to its original state
+                usernameInput.classList.remove("error");
+                usernameInput.classList.add("success");
+                // Perform other actions or submit the form
+                // For now, let's just display an alert
+                alert("Login successful!");
+            }
+        }
+
+        function create() {
+            // Function for the "Signup" button, you can implement signup logic here
+            alert("Signup button clicked!");
+        }
+
+        // Create the login form when the script is executed
+        createLoginForm();
+    </script>
+</body>
+</html>

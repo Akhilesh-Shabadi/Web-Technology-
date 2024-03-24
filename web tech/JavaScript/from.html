@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROM</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            border: 0;
+        }
+        /* body{
+            height: 100vh;
+            width: 100vw;   
+        } */
+        #outter{
+            height: 100vh;
+            width: 100vw;
+            /* border: 2px solid red; */
+            background-image: url("./_2c72497c-872f-4f17-8b68-7881ca9f3df4.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #inner{
+            height: 350px;
+            width: 450px;
+            border: 3px solid white;
+            padding: 9px;
+            background-color: rgba(255, 255, 255, 0.295);
+            backdrop-filter: blur(2px);
+            border-radius: 20px;
+        }
+        div{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        label{
+            justify-content: space-between;
+        }
+        button{
+            align-content: center;
+            justify-content: space-around;
+        }
+        fieldset{
+            
+            height: max-content;
+            /* width: 385px; */
+        }
+        legend{
+            padding-bottom: 20px;
+            font-size: large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .typeerror{
+            font-size: 15px;
+            color: red;
+        }
+        .namerror{
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 0.2px;
+        }
+        .emailerror{
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 0.2px;
+        }
+        .numbererror{
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 0.2px;
+        }
+        .passworderror{
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 0.2px;
+        }
+        .confrimpasserror{
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 0.2px;
+        }
+        button{
+            padding: 5px;
+            border-radius: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div id="outter"> 
+    <div id="inner">
+    <form action="">
+        <!-- <fieldset> -->
+            <legend><b>Signup</b></legend>
+            <label for="name">Name :</label>
+            <input type="text" id="name">
+            <div class="typeerror">
+                <h5 class="namerror"></h5>
+            </div> <br>
+            <label for="email">Email :</label>
+            <input type="text" name="" id="email">
+            <div class="typeerror">
+                <h5 class="emailerror"></h5>
+            </div> <br>
+            <label for="mobile">MOBILE :</label>
+            <input type="number" name="" id="mobile">
+            <div class="typeerror">
+                <h5 class="numbererror"></h5>
+            </div> <br>
+            <label for="date">DOB :</label>
+            <input type="date" name="" id="date"> <br> <br>
+            <label for="gender">GENDER :</label>
+            <input type="radio" name="" id="male"> <label for="male">Male</label>
+            <input type="radio" name="" id="female"> <label for="female">Female</label> <br> <br>
+            <label for="password">Password :</label>
+            <input type="text" name="" id="password">
+            <div class="typeerror">
+                <h5 class="passworderror"></h5>
+            </div> <br>
+            <label for="confrimpass">Confirm Password :</label>
+            <input type="text" name="" id="confrimpass"> 
+            <div class="typeerror">
+                <h5 class="confrimpasserror"></h5>
+            </div> <br>
+            <button type="submit" id="submit">Submit</button> 
+            <button>Reset</button>
+        <!-- </fieldset> -->
+    </form>
+    </div>
+    </div>
+    <script src="./from.js"></script>
+</body>
+</html>

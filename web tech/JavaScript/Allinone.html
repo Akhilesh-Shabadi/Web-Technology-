@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            border: 0;
+            /* height: 100vh;
+            width: 100vw; */
+        }
+        body{
+            background-image: url(./bugatti-chiron-rear-4k-8p.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            /* border: 2px solid red; */
+            height: 75px;
+            display: flex;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.386);
+            backdrop-filter: blur(10px);
+        }
+        div{
+            height: 70px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            text-align: center;
+            /* margin-right: 100px; */
+        }
+        .firstinnerdiv{
+            /* border: 2px solid green; */
+            width: 800px;
+            grid-template-columns: repeat(4,1fr);
+            margin-right: 240px;
+        }
+        h1{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .secondinnerdiv{
+            /* border: 2px solid gold; */
+            width: 300px;
+            /* grid-template-columns: repeat(2,1fr); */
+        }
+        .thirdinnerdiv{
+            /* border: 2px solid orange; */
+            width: 100px;
+            /* grid-template-columns: repeat(1,1fr); */
+        }
+        .thirdinnerdiv h1{
+            cursor: pointer;
+        }
+        .dropdown a{
+            display: block;
+            background-color:rgba(128, 128, 128, 0.751);
+            text-decoration: none;
+            padding: 5px 15px;
+            color: black;
+            text-align: left;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            /* background-color: hsl(0, 0%, 92%); */
+            min-width: 100px;
+            box-shadow: 2px 2px 5px hsl(0%, 0%, 0%,0.8);
+        }
+        .dropdown:hover .content{
+            display: block;
+        }
+        .dropdown a:hover{
+            background-color: hsl(0, 7%, 70%);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="firstinnerdiv">
+            <h1>HOME</h1>
+            <h1>ABOUT ME</h1>
+            <h1>GITHUB</h1>
+            <h1>LINKDIN</h1>
+        </div>
+        <div class="secondinnerdiv">
+            <h1>LOGIN</h1>
+            <h1>SIGNUP</h1>
+        </div>
+        <div class="thirdinnerdiv">
+            <h1 class="dropdown">
+                TASK
+                <div class="content">
+                    <a href="./addeventlistener.html">Add-Event-Listeners</a>
+                    <a href="./cart.html">Cart</a>
+                    <a href="./inputoutput.html">Table creation</a>
+                    <a href="./slide.html">Carosel</a>
+                    <a href="./speech.html">Talk back</a>
+                    <a href="./from.html">Signup page</a>
+                    <a href="./inoutprg.html">All Logical programs</a>
+                    <a href="./calculator.html">Calculator</a>
+                    <a href="./local&session_Storage.html">Local & Session Storage</a>
+                </div>
+            </h1>
+        </div>
+    </nav>
+
+    <script src="./Allinone.js"></script>
+</body>
+</html>
